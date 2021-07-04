@@ -47,9 +47,8 @@
 </footer>
 <!--footer area end-->
 
-
-    <!-- modal area start-->
-    <div class="modal fade" id="productquickview" tabindex="-1" role="dialog"  aria-hidden="true">
+     <!-- modal area start-->
+     <div class="modal fade" id="productquickview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -63,33 +62,26 @@
                                     <div class="tab-content product-details-large">
                                         <div class="tab-pane fade show active" id="tab1" role="tabpanel" >
                                             <div class="modal_tab_img">
-                                                <a href="#"><img src="https://demo.hasthemes.com/alista-preview/alista/assets/img/product/product1.jpg" alt=""></a>    
+                                                <div id="pro-1" class="tab-pane fade show active">
+                                                    <img src="" id="viewproductimage" alt="">
+                                                </div>    
                                             </div>
                                         </div>
-                                        
+                                       
                                     </div>
-                                    <div class="modal_tab_button">    
-                                        <ul class="nav product_navactive owl-carousel" role="tablist">
-                                            <li >
-                                                <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false"><img src="https://demo.hasthemes.com/alista-preview/alista/assets/img/s-product/product.jpg" alt=""></a>
-                                            </li>
-                                           
-
-                                        </ul>
-                                    </div>    
+                                    
                                 </div>  
                             </div> 
                             <div class="col-lg-7 col-md-7 col-sm-12">
                                 <div class="modal_right">
                                     <div class="modal_title mb-10">
-                                        <h2>Handbag feugiat</h2> 
+                                        <h2 id="productheading"></h2> 
                                     </div>
                                     <div class="modal_price mb-10">
-                                        <span class="new_price">$64.99</span>    
-                                        <span class="old_price" >$78.99</span>    
+                                        <span id="productprice" ></span>    
                                     </div>
                                     <div class="modal_description mb-15">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam, reiciendis maiores quidem aperiam, rerum vel recusandae </p>    
+                                        <p id="productdescription"></p>    
                                     </div> 
                                     <div class="variants_selects">
                                         <div class="variants_size">
@@ -112,23 +104,9 @@
                                                <option value="1">orange</option>
                                            </select>
                                         </div>
-                                        <div class="modal_add_to_cart">
-                                            <form action="#">
-                                                <input min="0" max="100" step="2" value="1" type="number">
-                                                <button type="submit">add to cart</button>
-                                            </form>
-                                        </div>   
+                                        
                                     </div>
-                                    <div class="modal_social">
-                                        <h2>Share this product</h2>
-                                        <ul>
-                                            <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                            <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>    
-                                    </div>      
+                                     
                                 </div>    
                             </div>    
                         </div>     
@@ -138,3 +116,4 @@
         </div>
     </div>
     <!-- modal area end-->
+    

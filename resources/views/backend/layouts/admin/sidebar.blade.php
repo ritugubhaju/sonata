@@ -77,12 +77,12 @@
 							</a>
 						</li> 
 
-						<li class="gui-folder">
+						{{-- <li class="gui-folder">
 							<a href="{{ route('deal.index') }}" >
 								<div class="gui-icon"><i class="md md-attach-money"></i></div>
 								<span class="title">Deals</span>
 							</a>
-						</li>
+						</li> --}}
 
 						<li class="gui-folder">
 							<a href="{{ route('testimonial.index') }}" >

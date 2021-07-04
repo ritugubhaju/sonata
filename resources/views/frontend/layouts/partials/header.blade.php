@@ -28,19 +28,19 @@
             <div class="row">
                 <div class="col-lg-2 col-md-12">
                     <div class="logo logo_three">
-                        <a href="https://demo.hasthemes.com/alista-preview/alista/index.html"><img src="https://demo.hasthemes.com/alista-preview/alista/assets/img/logo/logo-4.png" alt=""></a>
+                        <a href="https://demo.hasthemes.com/sonata-preview/sonata/index.html"><img src="https://demo.hasthemes.com/sonata-preview/sonata/assets/img/logo/logo-4.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-12">
                     <div class="header_middle_right">
                         <div class="header_contact">
                             <div class="contact_static">
-                                <a href="#"><i class="ion-android-call"></i> Call Us: +123.456.789</a>
+                                <a href="tel:{{setting('phone')}}"><i class="ion-android-call"></i> Call Us: {{setting('phone')}}</a>
                                 <span>MON- SAT 8:30 AM - 6:00 PM</span>
                             </div>
                             <div class="contact_static">
-                                <a href="#"><i class="ion-android-mail"></i> support@plazathemes.com</a>
-                                <span>alista ONLINE SUPPORT 24H/7</span>
+                                <a href="mailto:{{setting('email')}}"><i class="ion-android-mail"></i> {{setting('email')}}</a>
+                                <span>Sonata ONLINE SUPPORT 24H/7</span>
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                                         <i class="ion-android-close btn-close"></i>
                                     </div>
                                     <div class="logo">
-                                       <a href="https://demo.hasthemes.com/alista-preview/alista/index.html"><img src="https://demo.hasthemes.com/alista-preview/alista/assets/img/logo/logo-2.png" alt=""></a>
+                                       <a href="https://demo.hasthemes.com/sonata-preview/sonata/index.html"><img src="https://demo.hasthemes.com/sonata-preview/sonata/assets/img/logo/logo-2.png" alt=""></a>
                                     </div>
                                     <div class="header_description">
                                         <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart themes and provide premium and dedicated support to our products.</p>
@@ -189,12 +189,12 @@
                                     <li class="menu-item-has-children">
                                         <a href="#">Shop Layouts</a>
                                         <ul class="sub-menu">
-                                            <li><a href="https://demo.hasthemes.com/alista-preview/alista/shop.html">shop</a></li>
-                                            <li><a href="https://demo.hasthemes.com/alista-preview/alista/shop-fullwidth.html">Full Width</a></li>
-                                            <li><a href="https://demo.hasthemes.com/alista-preview/alista/shop-fullwidth-list.html">Full Width list</a></li>
-                                            <li><a href="https://demo.hasthemes.com/alista-preview/alista/shop-right-sidebar.html">Right Sidebar </a></li>
-                                            <li><a href="https://demo.hasthemes.com/alista-preview/alista/shop-right-sidebar-list.html"> Right Sidebar list</a></li>
-                                            <li><a href="https://demo.hasthemes.com/alista-preview/alista/shop-list.html">List View</a></li>
+                                            <li><a href="https://demo.hasthemes.com/sonata-preview/sonata/shop.html">shop</a></li>
+                                            <li><a href="https://demo.hasthemes.com/sonata-preview/sonata/shop-fullwidth.html">Full Width</a></li>
+                                            <li><a href="https://demo.hasthemes.com/sonata-preview/sonata/shop-fullwidth-list.html">Full Width list</a></li>
+                                            <li><a href="https://demo.hasthemes.com/sonata-preview/sonata/shop-right-sidebar.html">Right Sidebar </a></li>
+                                            <li><a href="https://demo.hasthemes.com/sonata-preview/sonata/shop-right-sidebar-list.html"> Right Sidebar list</a></li>
+                                            <li><a href="https://demo.hasthemes.com/sonata-preview/sonata/shop-list.html">List View</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -202,17 +202,17 @@
                             <li class="menu-item-has-children">
                                 <a href="#">blog</a>
                                 <ul class="sub-menu">
-                                    <li><a href="https://demo.hasthemes.com/alista-preview/alista/blog.html">blog</a></li>
-                                    <li><a href="https://demo.hasthemes.com/alista-preview/alista/blog-details.html">blog details</a></li>
-                                    <li><a href="https://demo.hasthemes.com/alista-preview/alista/blog-fullwidth.html">blog fullwidth</a></li>
-                                    <li><a href="https://demo.hasthemes.com/alista-preview/alista/blog-sidebar.html">blog sidebar</a></li>
+                                    <li><a href="https://demo.hasthemes.com/sonata-preview/sonata/blog.html">blog</a></li>
+                                    <li><a href="https://demo.hasthemes.com/sonata-preview/sonata/blog-details.html">blog details</a></li>
+                                    <li><a href="https://demo.hasthemes.com/sonata-preview/sonata/blog-fullwidth.html">blog fullwidth</a></li>
+                                    <li><a href="https://demo.hasthemes.com/sonata-preview/sonata/blog-sidebar.html">blog sidebar</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="https://demo.hasthemes.com/alista-preview/alista/about.html">about Us</a>
+                                <a href="https://demo.hasthemes.com/sonata-preview/sonata/about.html">about Us</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="https://demo.hasthemes.com/alista-preview/alista/contact.html"> Contact Us</a> 
+                                <a href="https://demo.hasthemes.com/sonata-preview/sonata/contact.html"> Contact Us</a> 
                             </li>
                         </ul>
                     </div>

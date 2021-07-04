@@ -142,6 +142,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 });
 
 Route::get('', 'Frontend\FrontendController@homepage')->name('homepage');
-
+Route::get('productdetail/{products}', 'Frontend\FrontendController@productsDetail')->name('products.detail');
 //Ajax
 Route::post('product/quick-view-product',"Frontend\FrontendController@quickViewProduct")->name('quick-view-product');
+
+Route::get('{page}', 'Frontend\FrontendController@page')->name('page.detail');
