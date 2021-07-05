@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Alista - eCommerce Bootstrap 4 Template</title>
+    <title>Home | Sonata</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -539,8 +539,8 @@
                 if(response.status){
                     $('#pro-1').html('<img src="uploads/product/'+response.data.image+'" id="viewproductimage" alt="">');
                     $('#productheading').text(response.data.title);
-                    $('#productdescription').text(response.data.description.replace('<p>','').replace('</p>', ''));
                     $('#productprice').text('Rs. '.concat((response.data.price)));
+                    $('#productdescription').text(response.data.description.replace('<p>','').replace('</p>', ''));
                     $('#productquickview').modal('show');
                 }
             }

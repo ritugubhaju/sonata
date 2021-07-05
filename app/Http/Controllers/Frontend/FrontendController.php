@@ -9,8 +9,13 @@ use App\Models\Page\Page;
 use App\Models\Slider\Slider;
 use App\Models\Brand\Brand;
 use App\Models\Category\Category;
+use App\Models\SubCategory\SubCategory;
 use App\Models\Product\Product;
 use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactFormMailNotifiable;
+use App\Mail\SendContactInfo;
 
 class FrontendController extends Controller
 {
@@ -25,9 +30,10 @@ class FrontendController extends Controller
         $sliders = Slider::where('is_published',0)->get();
         $brands = Brand::where('is_featured', 1)->where('is_published', 1)->get();
         $categories = Category::get()->take(4);
+        $subcategories = SubCategory::where('is_featured', 1)->where('is_published', 1)->get();
         $products = Product::where('is_featured', 1)->get();
         $bestsellerproducts = Product::where('best_seller', 1)->get();
-        return view('frontend.home',compact('menus','sliders','brands','categories','products','bestsellerproducts'));
+        return view('frontend.home',compact('menus','sliders','brands','categories','subcategories','products','bestsellerproducts'));
     }
 
     public function page($slug = null)
@@ -50,6 +56,19 @@ class FrontendController extends Controller
                 return view('frontend.errors.404');
             }
         }
+    }
+
+    public function contact()
+    {
+        return view('frontend.contact.contact');
+    }
+
+    public function sendcontact(Request $request)
+    {
+        $data = $request->all();
+        //dd($request->all());
+        Mail::to('ritu.gubhaju20@gmail.com')->send(new SendContactInfo($data));
+        return redirect()->back()->withSuccess(trans('Contact Inquiry Send Successfully'));
     }
 
     public function productsDetail(Product $products)
@@ -75,6 +94,11 @@ class FrontendController extends Controller
             ]);
 
         }
+    }
+
+    public function about()
+    {
+        return view('frontend.about.about');
     }
    
 }

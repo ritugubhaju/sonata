@@ -11,16 +11,14 @@
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="widgets_container widget_menu">
-                        <h3>Information</h3>
+                        <h3>Quick Links</h3>
                         <div class="footer_menu">
                             <ul>
-                                <li><a href="https://demo.hasthemes.com/alista-preview/alista/about.html">About Us</a></li>
-                                <li><a href="#">Delivery infomation</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#"> Travel</a></li>
-                                <li><a href="#">Conditions</a></li>
-                                <li><a href="#"> Frequently Questions</a></li>
-
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#"> About</a></li>
+                                <li><a href="#">Contact</a></li>
+                    
                             </ul>
                         </div>
 
@@ -32,9 +30,9 @@
                         <h3>Contact Us</h3>
                         <div class="footer_contact">
                             <ul>
-                                <li><i class="ion-ios-location"></i><span>Addresss:</span> The Barn, Ullenhall, Henley in Arden B578 5CC, England</li>
-                                <li><i class="ion-ios-telephone"></i><span>Call Us:</span>  +123.456.789 - +123.456.678</li>
-                                <li><i class="ion-android-mail"></i><span>Email:</span>  support@plazathemes.com</li>
+                                <li><i class="ion-ios-location"></i><span>Address:</span>{{setting('address')}}</li>
+                                <li><i class="ion-ios-telephone"></i><span>Call Us:</span> <a href="tel:{{setting('phone')}}">{{setting('phone')}}</a></li>
+                                <li><i class="ion-android-mail"></i><span>Email:</span> <a href="mailto:{{setting('email')}}">{{setting('email')}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -84,16 +82,7 @@
                                         <p id="productdescription"></p>    
                                     </div> 
                                     <div class="variants_selects">
-                                        <div class="variants_size">
-                                           <h2>size</h2>
-                                           <select class="select_option">
-                                               <option selected value="1">s</option>
-                                               <option value="1">m</option>
-                                               <option value="1">l</option>
-                                               <option value="1">xl</option>
-                                               <option value="1">xxl</option>
-                                           </select>
-                                        </div>
+                                       
                                         <div class="variants_color">
                                            <h2>color</h2>
                                            <select class="select_option">

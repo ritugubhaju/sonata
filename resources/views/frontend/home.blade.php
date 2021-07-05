@@ -119,9 +119,7 @@
                                             <div class="product_thumb">
                                                 <a class="primary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->image_path)}}" alt=""></a>
                                                 <a class="secondary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->banner_path)}}" alt=""></a>
-                                                <div class="label_product">
-                                                    <span class="label_sale">new</span>
-                                                </div>
+                                               
                                                 <div class="action_links">
                                                     <ul>
                                                        
@@ -157,20 +155,17 @@
                             @foreach($products as $product)
                             @if($product->category->slug =='eye-liner')
                                 <div class="col-lg-3">
-                                
+                                    
                                     <div class="single_product">
 
                                             <div class="product_thumb">
                                                 <a class="primary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->image_path)}}" alt=""></a>
                                                 <a class="secondary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->banner_path)}}" alt=""></a>
-                                                <div class="label_product">
-                                                    <span class="label_sale">new</span>
-                                                </div>
+                                               
                                                 <div class="action_links">
                                                     <ul>
-                                                       
+                                                    
                                                         <li ><a href="#" class="view-quickview" data-product_id="{{$product->id}}" id="quickviewproduct" data-toggle="modal" data-target="#productquickview" title="Quick View"><i class="ion-eye"></i></a></li>
-                                                        
                                                     </ul>
                                                 </div>
                                             </div>
@@ -182,9 +177,9 @@
                                                 <div class="price-container">
                                                     <div class="price_box">
                                                         <span class="current_price">Rs {{$product->price}}</span>
-                                                      
+                                                    
                                                     </div>
-                                                   
+                                                
                                                 </div>
 
                                             </div>
@@ -207,9 +202,7 @@
                                             <div class="product_thumb">
                                                 <a class="primary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->image_path)}}" alt=""></a>
                                                 <a class="secondary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->banner_path)}}" alt=""></a>
-                                                <div class="label_product">
-                                                    <span class="label_sale">new</span>
-                                                </div>
+                                               
                                                 <div class="action_links">
                                                     <ul>
                                                        
@@ -344,9 +337,7 @@
                                     <div class="product_thumb">
                                         <a class="primary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->image_path)}}" alt=""></a>
                                         <a class="secondary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->banner_path)}}" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">new</span>
-                                        </div>
+                                       
                                         <div class="action_links">
                                             <ul>
                                                 <li ><a href="#" class="view-quickview" data-product_id="{{$product->id}}" id="quickviewproduct" data-toggle="modal" data-target="#productquickview" title="Quick View"><i class="ion-eye"></i></a></li>

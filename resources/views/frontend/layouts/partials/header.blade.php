@@ -36,11 +36,11 @@
                         <div class="header_contact">
                             <div class="contact_static">
                                 <a href="tel:{{setting('phone')}}"><i class="ion-android-call"></i> Call Us: {{setting('phone')}}</a>
-                                <span>MON- SAT 8:30 AM - 6:00 PM</span>
+                                
                             </div>
                             <div class="contact_static">
                                 <a href="mailto:{{setting('email')}}"><i class="ion-android-mail"></i> {{setting('email')}}</a>
-                                <span>Sonata ONLINE SUPPORT 24H/7</span>
+                              
                             </div>
                         </div>
                     </div>
@@ -51,47 +51,55 @@
     <!--header middle area end-->
     
     <!--header bottom start-->
-    <div class="header_bottom sticky-header">
-        <div class="container">
-            <div class="header_container_right container_position">
-                <div class="main_menu menu_three"> 
-                    <nav>  
-                        <ul>
-                            @foreach(menus() as $menu)
-                                <?php
-                                $hasSub = !$menu->subMenus->isEmpty();
-                                ?>
-                                <li class="{{($hasSub) ? "dropdown" : ""}}">
-                                    <a class="{{($hasSub) ? "dropdown-toggle" : ""}} nav-link" href="{{ url($menu->url) }} "
-                                    data-toggle="{{($hasSub) ? "dropdown" : ""}}">
-                                        {{$menu->name}}
-                                    </a>
-                                    @if($hasSub)
-                                        <div class="dropdown-menu">
-                                            <ul>
-                                                @foreach($menu->subMenus as $key => $sub)
-                                                    <li>
-                                                        <a class="dropdown-item nav-link nav_item"
-                                                        href="{{url($sub->url)}}">{{ $sub->name }}</a>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    @endif
-                                </li>
-                             @endforeach                           
-                        </ul>  
-                    </nav> 
-                </div>
-                <div class="header_block_right">
+    
+{{-- menu --}}
+<div class="header_bottom sticky-header">
+    <div class="container">
+        <div class="header_container_right container_position">
+            <div class="main_menu menu_three"> 
+                <nav>  
                     <ul>
-                        <li class="search_bar"><a href="javascript:void(0)"><i class="ion-ios-search-strong"></i></a> </li>
-                    </ul>
-                </div>
+                        <li class="active"><a  href="{{ route('homepage') }}"> Home</a>
+                                                        
+                        </li>
+                        <li class="mega_items"><a href="https://demo.hasthemes.com/alista-preview/alista/shop.html">Products</a> 
+                            <div class="mega_menu">
+                                <ul class="mega_menu_inner">
+                                 
+                                    @foreach($categories as $category)
+                                        <li><a href="">{{$category->title}}</a>
+                                            <ul>  
+                                                <li>
+                                                    @foreach($subcategories as $subcategory) 
+                                                        @if($category->id == $subcategory->category->id)
+                                                            <a href="">{{$subcategory->title}}</a>
+                                                        @endif
+                                                    @endforeach
+                                                    
+                                                </li>                   
+                                            </ul>
+                                        </li>
+                                    @endforeach
+                                    
+                                    <li><img src="https://demo.hasthemes.com/alista-preview/alista/assets/img/bg/img-itemmenu.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                        </li>
+                       
+                        <li><a href="{{ url('about') }}"> About Us</a></li>
+                        <li><a href="{{ url('contact') }}"> Contact Us</a></li>
+                    </ul>  
+                </nav> 
+            </div>
+            <div class="header_block_right">
+                <ul>
+                    <li class="search_bar"><a href="javascript:void(0)"><i class="ion-ios-search-strong"></i></a> </li>
+                </ul>
             </div>
         </div>
-        <!--header bottom end-->
     </div>
+    <!--header bottom end-->
+</div>
 </header>
 <!--header area end-->
 <!--search overlay-->
