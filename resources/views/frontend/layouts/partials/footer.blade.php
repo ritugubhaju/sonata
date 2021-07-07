@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="widgets_container contact_us">
-                        <a href="https://demo.hasthemes.com/alista-preview/alista/index.html"><img src="https://demo.hasthemes.com/alista-preview/alista/assets/img/logo/logo-2.png" alt=""></a>
+                        <a href="{{ route('homepage') }}"><img src="{{ asset('assets/images/logo.png') }}" width="40%" alt=""></a>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
                     </div>
                 </div>
@@ -14,10 +14,9 @@
                         <h3>Quick Links</h3>
                         <div class="footer_menu">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#"> About</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="{{ route('homepage') }}">Home</a></li>
+                                <li><a href="{{ url('about') }}"> About</a></li>
+                                <li><a href="{{ url('contact') }}">Contact</a></li>
                     
                             </ul>
                         </div>

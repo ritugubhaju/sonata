@@ -143,10 +143,16 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
 Route::get('', 'Frontend\FrontendController@homepage')->name('homepage');
 Route::get('about', 'Frontend\FrontendController@about')->name('about');
-Route::get('productdetail/{products}', 'Frontend\FrontendController@productsDetail')->name('products.detail');
+Route::get('products/{slug}', 'Frontend\FrontendController@getproductbyCategory')->name('products');
+Route::get('productdetail/{products}', 'Frontend\FrontendController@productdetailbyCategory')->name('products.detail');
 //route for ajax
-Route::post('product/quick-view-product',"Frontend\FrontendController@quickViewProduct")->name('quick-view-product');
+Route::post('quick-view-product','Frontend\FrontendController@quickViewProduct')->name('quick-view-product');
 //
+Route::get('all-products/{id}', 'Frontend\FrontendController@getproductbySubCategory')->name('all-products');
 Route::post('contact', 'Frontend\FrontendController@sendcontact')->name('send-contact');
 Route::get('contact', 'Frontend\FrontendController@contact')->name('contact');
+
+
+Route::get('/search/','Frontend\FrontendController@searchResult')->name('search');
+
 Route::get('{page}', 'Frontend\FrontendController@page')->name('page.detail');

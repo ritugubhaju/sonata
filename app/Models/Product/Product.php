@@ -68,11 +68,8 @@ use Sluggable;
 
     function getBannerPathAttribute()
     {
-        if ($this->banner_image) {
-            return $this->path . '/' . $this->banner_image;
-        } else {
-            return 'assets/images/reliance/Background.jpg';
-        }
+
+        return $this->path . '/' . $this->banner_image;
     }
 
     function getImagePath1Attribute(){

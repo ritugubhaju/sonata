@@ -6842,7 +6842,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #e5e5e5;
   padding: 8px 10px;
   margin: 0 0 40px;
 }
@@ -6943,7 +6942,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .pagination ul li {
   display: inline-block;
-  width: 30px;
+  width: 40px;
   height: 30px;
   line-height: 30px;
   text-align: center;
