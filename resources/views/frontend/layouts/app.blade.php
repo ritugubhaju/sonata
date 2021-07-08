@@ -548,6 +548,23 @@
     });
 </script>
 
+ {{-- <script>
+        $('.sortby').change(function(e){
+            e.preventDefault();
+            var sortby = $(this).val();
+            var productslug = $('.productslug').val();
+            $.ajax({
+                type: "POST",
+                url: "{{ route('productsortby') }}",
+                data: {
+                    _token: "{{  csrf_token()  }}",
+                    sortby: sortby,
+                    slug: productslug,
+                },
+                
+            })
+        });
+    </script> --}}
 
 </body>
 

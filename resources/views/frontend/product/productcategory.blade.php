@@ -13,7 +13,7 @@
                             <h3>Products</h3>
                             <ul>
                                 <li><a href="{{ route('homepage') }}">Home</a></li>
-                                <li><a href="{{ url('products') }}">{{$category->title}}</a></li>
+                                <li><a href="{{ route('products',$category->slug) }}">{{$category->title}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -44,19 +44,27 @@
 
                                 <button data-role="grid_list" type="button"  class="btn-list" data-toggle="tooltip" title="List"></button>
                             </div>
-                            <div class=" niceselect_option">
+                            <div>
 
-                                <form class="select_option" action="#">
-                                    <select name="orderby" id="short">
-
-                                        <option selected value="1">Sort by average rating</option>
-                                        <option  value="2">Sort by popularity</option>
-                                        <option value="3">Sort by newness</option>
-                                        <option value="4">Sort by price: low to high</option>
-                                        <option value="5">Sort by price: high to low</option>
-                                        <option value="6">Product Name: Z</option>
-                                    </select>
-                                </form>
+                                {{-- <label>Sort by :</label>
+                                        <select id="sortby">
+                                            <option value="" disabled selected> Default</option>
+                                            <option value="name" class="sortby"> Name</option>
+                                            <option value="lowtohigh" class="sortby"> Price: Low to High</option>
+                                            <option value="hightolow" class="sortby"> Price: High to low</option>
+                                           
+                                        </select> --}}
+                                        
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                                Sort by 
+                                            </button>
+                                            <div class="dropdown-menu">
+                                              <a class="dropdown-item" href="{{route('products',$category->slug)}}?option=name">Name</a>
+                                              <a class="dropdown-item" href="{{route('products',$category->slug)}}?option=price-low-to-high">Price: Low to High</a>
+                                              <a class="dropdown-item" href="{{route('products',$category->slug)}}?option=price-high-to-low">Price: High to low</a>
+                                            </div>
+                                        </div>
 
 
                             </div>

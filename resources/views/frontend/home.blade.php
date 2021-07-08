@@ -62,7 +62,7 @@
                             <div class="banner_thumb">
                                 <a href=""><img src="{{asset($category->image_path)}}" alt=""></a>
                                 <div class="banner_text">
-                                    <a href="#">{{$category->title}}</a>
+                                    <a href="{{ route('products',$category->slug) }}">{{$category->title}}</a>
                                 </div>
                             </div>
                         
@@ -118,7 +118,7 @@
 
                                             <div class="product_thumb">
                                                 <a class="primary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->image_path)}}" alt=""></a>
-                                                <a class="secondary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->banner_path)}}" alt=""></a>
+                                                
                                                
                                                 <div class="action_links">
                                                     <ul>
@@ -336,7 +336,7 @@
 
                                     <div class="product_thumb">
                                         <a class="primary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->image_path)}}" alt=""></a>
-                                        <a class="secondary_img" href="{{ route('products.detail', $product->slug) }}"><img src="{{asset($product->banner_path)}}" alt=""></a>
+                                       
                                        
                                         <div class="action_links">
                                             <ul>

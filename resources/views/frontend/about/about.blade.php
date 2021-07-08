@@ -9,7 +9,7 @@
                 <div class="breadcrumb_content">
                     <ul>
                         <li><a href="{{ route('homepage') }}">Home</a></li>
-                        <li><a href="{{ url('about') }}">About Us</a></li>
+                        <li><a href="{{ route('about') }}">About Us</a></li>
                     </ul>
                 </div>
             </div>

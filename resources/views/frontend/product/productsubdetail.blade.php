@@ -29,34 +29,72 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="product-details-tab">
-                                    <div id="img-1" class="zoomWrapper single-zoom">
-                                        <a href="#">
-                                            <img id="zoom1" src="{{asset($products->image_path)}}">
+                                    <div>
+                                        <a>
+                                            <img src="{{asset($products->image_path)}}">
                                         </a>
                                     </div>
-                                    <div class="single-zoom-thumb">
-                                        <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
-                                            <li>
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset($products->banner_path)}}" data-zoom-image="{{asset($products->banner_path)}}" >
-                                                    <img src="{{asset($products->banner_path)}}" alt="zo-th-1"/>
-                                                </a>
+                                    
+                                   
+                                        <div>
+                                           
+                                            <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
+                                                    @if(isset($products->banner_image))
+                                                        <li>
+                                                          
+                                                                <a href="#"  data-update=""  >
+                                                                    <img src="{{asset($products->banner_path)}}" alt="ri"/>
+                                                                </a>
+                                                        
+                                                        </li>
+                                                    @else 
+                                                    <li>
+                                                            
+                                                        <a href="#"  data-update=""   >
+                                                            <img src="{{asset('assets/images/logo.png')}}" alt="ri"/>
+                                                        </a>
+                                                
+                                                    </li>
+                                                    @endif
 
-                                            </li>
-                                            <li >
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset($products->image_path1)}}" data-zoom-image="{{asset($products->image_path1)}}" >
-                                                    <img src="{{asset($products->image_path1)}}" alt="zo-th-1"/>
-                                                </a>
+                                                    @if(isset($products->image1))
+                                                        <li >
+                            
+                                                            <a href="#"  data-update=""  >
+                                                                <img src="{{asset($products->image_path1)}}" alt=""/>
+                                                            </a>
 
-                                            </li>
+                                                        </li>
+                                                     @else 
+                                                        <li>
+                                                                
+                                                            <a href="#"  data-update=""  >
+                                                                <img src="{{asset('assets/images/logo.png')}}" alt="ri"/>
+                                                            </a>
+                                                    
+                                                        </li>
+                                                    @endif
+                                                    
+                                                    @if(isset($products->image2))
+                                                        <li >
+                                                            <a href="#"  data-update="" >
+                                                                <img src="{{asset($products->image_path2)}}" alt=""/>
+                                                            </a>
+
+                                                        </li>
+                                                    @else 
+                                                        <li>
+                                                                
+                                                            <a href="#"  data-update=""  >
+                                                                <img src="{{asset('assets/images/logo.png')}}" alt="ri"/>
+                                                            </a>
+                                                    
+                                                        </li>
+                                                    @endif
+                                            </ul>
                                             
-                                            <li >
-                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset($products->image_path2)}}" data-zoom-image="{{asset($products->image_path2)}}">
-                                                    <img src="{{asset($products->image_path2)}}" alt="zo-th-1"/>
-                                                </a>
-
-                                            </li>
-                                        </ul>
-                                    </div>
+                                        </div>
+                                   
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
@@ -84,7 +122,7 @@
                                         </div>
                                        
                                         <div class="product_meta">
-                                            <span>Category: <a href="#">{{ $products->category->title}}</a></span>
+                                            <span>Sub Category: <a href="#">{{ $products->subcategory->title}}</a></span>
                                         </div>
 
                                     </form>

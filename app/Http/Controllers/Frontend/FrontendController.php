@@ -56,23 +56,51 @@ class FrontendController extends Controller
         return redirect()->back()->withSuccess(trans('Contact Inquiry Send Successfully'));
     }
 
-    public function getproductbyCategory(Category $category, Product $products , Subcategory $subcategory,$slug)
+    public function getproductbyCategory($slug, Request $request)
     {
         $category = Category::where('slug',$slug)->first();   
         $subcategory = SubCategory::where('id', $category->id)->get();
-        $product = Product::where('category_id',$category->id)->paginate(15);
-
+        if($request->has('option')){
+            if ($request->option == 'name') {
+                $product = Product::where('category_id',$category->id)->orderBy('title','asc')->paginate(15);
+            }
+            elseif($request->option == 'price-low-to-high') {
+                $product = Product::where('category_id',$category->id)->orderBy('price','asc')->paginate(15);
+            }
+            elseif ($request->option == 'price-high-to-low') {
+                $product = Product::where('category_id',$category->id)->orderBy('price','desc')->paginate(15);
+           
+            }
+        }else{
+            $product = Product::where('category_id',$category->id)->paginate(15);
+        }
+        
         $categories = Category::get();
         $subcategories = SubCategory::where('is_featured', 1)->where('is_published', 1)->get();
         $products = Product::where('is_featured', 1)->get();
         return view('frontend.product.productcategory', compact('products','product','category','categories','subcategory','subcategories'));
     }
 
-    public function getproductbySubCategory(Category $category, Product $products , Subcategory $subcategory,$slug)
+    public function getproductbySubCategory($slug , Request $request)
     {
         $category = Category::where('id',$slug)->first();
         $subcategory = SubCategory::where('slug', $slug)->first();
-        $product = Product::where('subcategory_id',$subcategory->id)->paginate(15);
+
+        if($request->has('option')){
+            if ($request->option == 'name') {
+                $product = Product::where('subcategory_id',$subcategory->id)->orderBy('title','asc')->paginate(15);
+            }
+            elseif($request->option == 'price-low-to-high') {
+                $product = Product::where('subcategory_id',$subcategory->id)->orderBy('price','asc')->paginate(15);
+            }
+            elseif ($request->option == 'price-high-to-low') {
+                $product = Product::where('subcategory_id',$subcategory->id)->orderBy('price','desc')->paginate(15);
+           
+            }
+        }else{
+            $product = Product::where('subcategory_id',$subcategory->id)->paginate(15);
+        }
+       
 
         $categories = Category::get();
         $subcategories = SubCategory::where('is_featured', 1)->where('is_published', 1)->get();   
@@ -88,6 +116,9 @@ class FrontendController extends Controller
         $products = Product::where('slug',$products->slug)->first();
         return view('frontend.product.productcategorydetail', compact('products','categories','subcategories'));
     }
+
+    
+
 
     public function quickViewProduct(Request $request){
         $categories = Category::get();

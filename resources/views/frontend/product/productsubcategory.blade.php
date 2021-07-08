@@ -13,7 +13,7 @@
                             <h3>Products</h3>
                             <ul>
                                 <li><a href="{{ route('homepage') }}">Home</a></li>
-                                <li><a href="{{ url('all-products') }}"> {{$subcategory->title}}</a></li>
+                                <li><a href="{{ route('all-products',$subcategory->slug) }}"> {{$subcategory->title}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -44,19 +44,19 @@
 
                                 <button data-role="grid_list" type="button"  class="btn-list" data-toggle="tooltip" title="List"></button>
                             </div>
-                            <div class=" niceselect_option">
+                            <div>
 
-                                <form class="select_option" action="#">
-                                    <select name="orderby" id="short">
-
-                                        <option selected value="1">Sort by average rating</option>
-                                        <option  value="2">Sort by popularity</option>
-                                        <option value="3">Sort by newness</option>
-                                        <option value="4">Sort by price: low to high</option>
-                                        <option value="5">Sort by price: high to low</option>
-                                        <option value="6">Product Name: Z</option>
-                                    </select>
-                                </form>
+                            
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                    Sort by 
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="{{route('all-products',$subcategory->slug)}}?option=name">Name</a>
+                                  <a class="dropdown-item" href="{{route('all-products',$subcategory->slug)}}?option=price-low-to-high">Price: Low to High</a>
+                                  <a class="dropdown-item" href="{{route('all-products',$subcategory->slug)}}?option=price-high-to-low">Price: High to low</a>
+                                </div>
+                            </div>
 
 
                             </div>
@@ -74,7 +74,7 @@
 
                                         <div class="product_thumb">
                                             <a class="primary_img" href="{{ route('products.detail', $productsdata->slug) }}"><img src="{{asset($productsdata->image_path)}}" alt=""></a>
-                                            <a class="secondary_img" href="{{ route('products.detail', $productsdata->slug) }}"><img src="{{asset($productsdata->banner_path)}}" alt=""></a>
+                                           
                                            
                                             {{-- <div class="action_links">
                                                 <ul>

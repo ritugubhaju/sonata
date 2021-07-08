@@ -200,16 +200,16 @@ ul {
 }
 
 .home-five_wrapper .red-violet_color a:hover {
-  color: #AE307C !important;
+  color: #3E4095 !important;
 }
 .home-five_wrapper .red-violet_color .owl-nav div:hover {
-  color: #AE307C !important;
+  color: #3E4095 !important;
 }
 .home-five_wrapper .label_product span.label_sale {
-  background-color: #AE307C;
+  background-color: #3E4095;
 }
 .home-five_wrapper .label_product span.label_sale:before {
-  border-color: #AE307C transparent transparent transparent;
+  border-color: #3E4095 transparent transparent transparent;
 }
 
 /*-- 
@@ -288,7 +288,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     Scroll Up 
 -----------------------------------------*/
 #scrollUp {
-  background: #83b53b none repeat scroll 0 0;
+  background: #3E4095 none repeat scroll 0 0;
   bottom: 85px;
   color: #ffffff;
   cursor: pointer;
@@ -1803,6 +1803,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*home three css here*/
 .header_top {
+  background: #efefff;
   border-bottom: 1px solid #e5e5e5;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1846,7 +1847,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   visibility: visible;
 }
 .header_top_left > ul > li:hover > a {
-  color: #AE307C;
+  color: #3E4095;
 }
 @media only screen and (max-width: 767px) {
   .header_top_left > ul > li {
@@ -1873,14 +1874,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .header_top_left > ul > li:hover a:not([href]):not([tabindex]) {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 .dropdown_search_three .search_close_btn i:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .dropdown_search_three .search_container form button:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 .dropdown_currency, .dropdown_links, .dropdown_language {
@@ -1931,7 +1932,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   padding: 13px 0;
 }
 .dropdown_currency li a:hover, .dropdown_links li a:hover, .dropdown_language li a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2004,7 +2005,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .header_shipping a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2130,10 +2131,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   display: block;
 }
 .contact_static a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .contact_static a i {
-  color: #AE307C;
+  color: #3E4095;
   font-size: 21px;
   vertical-align: middle;
   margin-right: 3px;
@@ -2162,10 +2163,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-weight: 700;
 }
 .mini_cart_three > a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .mini_cart_three > a i {
-  color: #AE307C;
+  color: #3E4095;
   font-size: 40px;
   vertical-align: middle;
   margin-right: 10px;
@@ -2177,16 +2178,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   right: 62px;
 }
 .mini_cart_three .cart_info a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .mini_cart_three .cart_info span.price_cart {
-  color: #AE307C;
+  color: #3E4095;
 }
 .mini_cart_three .cart_remove a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .mini_cart_three .cart_button a:hover {
-  background: #AE307C;
+  background: #3E4095;
 }
 
 .menu_three nav > ul > li > a {
@@ -2194,22 +2195,22 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   padding: 22px 23px 22px 23px;
 }
 .menu_three nav > ul > li > a::before {
-  background: #AE307C;
+  background: #3E4095;
 }
 .menu_three nav > ul > li > a::after {
-  background: #AE307C;
+  background: #3E4095;
 }
 .menu_three nav > ul > li:hover > a {
-  color: #AE307C;
+  color: #3E4095;
 }
 .menu_three nav > ul > li ul.sub_menu li a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .menu_three .mega_menu_inner > li > a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .menu_three .mega_menu_inner > li ul li a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 .header_bottom.sticky-header.sticky {
@@ -2227,7 +2228,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-align: right;
 }
 .header_bottom .header_block_right > ul > li > a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 /*home four css here*/
@@ -2361,64 +2362,64 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*Home Five css here*/
 .home-five_wrapper .menu_two > nav > ul > li:hover > a {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .menu_two > nav > ul > li:hover > a:before {
-  background-color: #AE307C;
+  background-color: #3E4095;
 }
 .home-five_wrapper .menu_two > nav > ul > li:hover > a:after {
-  background-color: #AE307C;
+  background-color: #3E4095;
 }
 .home-five_wrapper .menu_two > nav > ul > li > ul > li:hover > a {
-  color: #AE307C !important;
+  color: #3E4095 !important;
 }
 .home-five_wrapper .menu_two > nav > ul > li.mega_items .mega_menu > ul.mega_menu_inner > li > a:hover {
-  color: #AE307C !important;
+  color: #3E4095 !important;
 }
 .home-five_wrapper .menu_two > nav > ul > li.mega_items .mega_menu > ul.mega_menu_inner > li > ul > li:hover > a {
-  color: #AE307C !important;
+  color: #3E4095 !important;
 }
 .home-five_wrapper .header_block_right > ul > li:hover > a {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .header_block_right > ul > li.mini_cart_wrapper > a span {
-  background-color: #AE307C;
+  background-color: #3E4095;
 }
 .home-five_wrapper .header_block_right > ul > li.mini_cart_wrapper .mini_cart .cart_item .cart_info > a:hover,
 .home-five_wrapper .header_block_right > ul > li.mini_cart_wrapper .mini_cart .cart_item .cart_remove > a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .header_block_right > ul > li.mini_cart_wrapper .mini_cart .cart_item .cart_info > span.price_cart,
 .home-five_wrapper .header_block_right > ul > li.mini_cart_wrapper .mini_cart .cart_item .cart_remove > span.price_cart {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .header_block_right > ul > li.mini_cart_wrapper .mini_cart .mini_cart_footer .cart_button > a:hover {
-  background-color: #AE307C;
+  background-color: #3E4095;
 }
 .home-five_wrapper .dropdown_search .search_close_btn i:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .dropdown_search button:hover {
-  color: #AE307C !important;
+  color: #3E4095 !important;
 }
 .home-five_wrapper .setting_wrapper_two .setting_close_btn:hover > i {
-  color: #AE307C;
+  color: #3E4095;
 }
 > a .home-five_wrapper .setting_wrapper_two .sub-links > li.active {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .top_links > ul > li > ul > li > a.active {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .sub_links > li > a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .setting_social > ul > li > a:hover {
-  background-color: #AE307C;
-  border-color: #AE307C;
+  background-color: #3E4095;
+  border-color: #3E4095;
 }
 .home-five_wrapper #scrollUp {
-  background-color: #AE307C;
+  background-color: #3E4095;
 }
 
 /*-- 2.3 Categories menu css here --*/
@@ -3677,7 +3678,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .slider_section_three .owl-nav div {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 .slider_c_three a {
@@ -3697,16 +3698,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .slider_c_three a:hover {
   background: url(../img/icon/slider-btn.png) no-repeat scroll center center/cover;
-  color: #AE307C;
+  color: #3E4095;
 }
 .slider_c_three.color_three h1, .slider_c_three.color_three .slider_c_four h2, .slider_c_four .slider_c_three.color_three h2 {
-  color: #AE307C;
+  color: #3E4095;
 }
 .slider_c_three.color_three h2 {
-  color: #AE307C;
+  color: #3E4095;
 }
 .slider_c_three.color_three h3 {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 /*home four css here*/
@@ -4155,7 +4156,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   transform: inherit;
 }
 .banner_three .banner_text a:hover {
-  background: #AE307C;
+  background: #3E4095;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner_three .banner_text {
@@ -5209,32 +5210,32 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .product_tab_btn3 ul.nav li a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .product_tab_btn3 ul.nav li a.active {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 .product_color3 .single_product {
   border: 1px solid #e5e5e5;
 }
 .product_color3 .single_product:hover {
-  border-color: #AE307C;
+  border-color: #3E4095;
 }
 .product_color3 .action_links ul li a:hover {
-  background: #AE307C;
+  background: #3E4095;
 }
 .product_color3 .product_name h4 a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .product_color3 .product_rating ul li a {
-  color: #AE307C;
+  color: #3E4095;
 }
 .product_color3 .wishlist_btn a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .product_color3 button:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 .deals_section_three {
@@ -5246,22 +5247,22 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .deals_section_three .product_name a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .deals_section_three .product_title h3 a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .deals_section_three .product_sale span {
-  color: #AE307C;
+  color: #3E4095;
 }
 .deals_section_three .product_button a {
-  background: #AE307C;
+  background: #3E4095;
 }
 .deals_section_three .product_button a:hover {
   background: #333333;
 }
 .deals_section_three .owl-nav div:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .deals_section_three .deals_banner {
@@ -5291,13 +5292,13 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /* ---Home Five Style-- */
 .home-five_wrapper .featured_column4 .single_featured .featured_content .featured_name a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .featured_column4 .single_featured .featured_content .sub_featured_categorie > ul > li:before {
-  background-color: #AE307C;
+  background-color: #3E4095;
 }
 .home-five_wrapper .featured_column4 .single_featured .featured_content .sub_featured_categorie > ul > li > a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 /*small product css here*/
@@ -5375,13 +5376,13 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .small_product_list .product_name h4 a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .small_product_list .product_rating {
   margin-bottom: 2px;
 }
 .small_product_list .product_rating ul li a {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 .small_product_title {
@@ -5408,7 +5409,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   bottom: -2px;
   height: 2px;
   width: 70px;
-  background: #AE307C;
+  background: #3E4095;
   left: 0;
 }
 
@@ -5421,7 +5422,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: inherit;
 }
 .small_product_container button:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .small_product_container button.next_arrow {
   right: 0;
@@ -5561,22 +5562,22 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .home-five_wrapper .product_four .single_product:hover {
-  border-color: #AE307C;
+  border-color: #3E4095;
 }
 .home-five_wrapper .product_four .single_product .product_name a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .product_four .single_product .product_rating > ul > li > a {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .product_four .single_product .wishlist_btn a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .home-five_wrapper .product_four .single_product .action_links > ul > li > a:hover {
-  background-color: #AE307C;
+  background-color: #3E4095;
 }
 .home-five_wrapper .product_four .single_product .single_countdown {
-  background-color: #AE307C;
+  background-color: #3E4095;
 }
 
 .product_tab_btn3.btn_4 ul.nav li a:hover {
@@ -5743,10 +5744,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   padding: 0 20px 23px;
 }
 .blog_three .blog_content h3 a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .blog_three .blog_content > a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .blog_three .single_blog {
   background: #ffffff;
@@ -6133,7 +6134,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-bottom: 15px;
 }
 .testimonial_three .testimonial_content h3 a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .testimonial_three .testimonial_content i {
   margin-bottom: 12px;
@@ -6158,10 +6159,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   padding: 0;
 }
 .testimonial_three .slick-dots li button:hover {
-  border-color: #AE307C;
+  border-color: #3E4095;
 }
 .testimonial_three .slick-dots li.slick-active button {
-  border-color: #AE307C;
+  border-color: #3E4095;
 }
 
 .testimonial_img_slider {
@@ -6219,7 +6220,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: inherit;
 }
 .brand_three .owl-nav div:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 
 .brand_four {
@@ -6526,23 +6527,23 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*home three css here*/
 .footer_three .footer_contact ul li i {
-  color: #AE307C;
+  color: #3E4095;
 }
 .footer_three .newsletter_form form button {
-  background: #AE307C;
+  background: #3E4095;
 }
 .footer_three .newsletter_form form button:hover {
   background: #333333;
 }
 .footer_three .footer_menu ul li a:hover {
-  color: #AE307C;
+  color: #3E4095;
 }
 .footer_three .footer_social ul li a:hover {
-  background: #AE307C;
-  border-color: #AE307C;
+  background: #3E4095;
+  border-color: #3E4095;
 }
 .footer_three .copyright_area p a {
-  color: #AE307C;
+  color: #3E4095;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer_three .footer_top {
@@ -6624,7 +6625,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #ffffff;
 }
 .breadcrumb_content ul li a:hover {
-  color: #83b53b;
+  color: #000;
 }
 .breadcrumb_content ul li a::before {
   position: absolute;

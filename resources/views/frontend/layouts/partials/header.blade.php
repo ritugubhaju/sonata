@@ -67,12 +67,12 @@
                                 <ul class="mega_menu_inner">
                                  
                                     @foreach($categories as $category)
-                                        <li><a href="{{ url('products',$category->slug) }}">{{$category->title}}</a>
+                                        <li><a href="{{ route('products',$category->slug) }}">{{$category->title}}</a>
                                             <ul>  
                                                 <li>
                                                     @foreach($subcategories as $subcategory) 
                                                         @if($category->id == $subcategory->category->id)
-                                                            <a href="{{ url('all-products',$subcategory->slug) }}">{{$subcategory->title}}</a>
+                                                            <a href="{{ route('all-products',$subcategory->slug) }}">{{$subcategory->title}}</a>
                                                         @endif
                                                     @endforeach
                                                     
@@ -86,8 +86,8 @@
                             </div>
                         </li>
                        
-                        <li><a href="{{ url('about') }}"> About Us</a></li>
-                        <li><a href="{{ url('contact') }}"> Contact Us</a></li>
+                        <li><a href="{{ route('about') }}"> About Us</a></li>
+                        <li><a href="{{ route('contact') }}"> Contact Us</a></li>
                     </ul>  
                 </nav> 
             </div>

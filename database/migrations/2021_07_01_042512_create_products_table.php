@@ -25,7 +25,7 @@ class CreateProductsTable extends Migration
             $table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');
             $table->longText('description')->nullable();
             $table->longText('specification')->nullable();
-            $table->string('price')->nullable();
+            $table->decimal('price')->nullable();
             $table->string('featured_image')->nullable();
             $table->string('banner_image')->nullable();
             $table->string('image1')->nullable();

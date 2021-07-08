@@ -145,6 +145,7 @@ Route::get('', 'Frontend\FrontendController@homepage')->name('homepage');
 Route::get('about', 'Frontend\FrontendController@about')->name('about');
 Route::get('products/{slug}', 'Frontend\FrontendController@getproductbyCategory')->name('products');
 Route::get('productdetail/{products}', 'Frontend\FrontendController@productdetailbyCategory')->name('products.detail');
+Route::post('productsortby', 'Frontend\FrontendController@productsortBy')->name('productsortby') ;
 //route for ajax
 Route::post('quick-view-product','Frontend\FrontendController@quickViewProduct')->name('quick-view-product');
 //

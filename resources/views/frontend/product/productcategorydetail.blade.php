@@ -29,20 +29,20 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="product-details-tab">
-                                    <div id="img-1" class="zoomWrapper single-zoom">
-                                        <a href="#">
-                                            <img id="zoom1" src="{{asset($products->image_path)}}">
+                                    <div>
+                                        <a>
+                                            <img src="{{asset($products->image_path)}}">
                                         </a>
                                     </div>
                                     
                                    
-                                        <div class="single-zoom-thumb">
+                                        <div>
                                            
                                             <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
                                                     @if(isset($products->banner_image))
                                                         <li>
-                                                            
-                                                                <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset($products->banner_path)}}" data-zoom-image="{{asset($products->banner_path)}}" >
+                                                          
+                                                                <a href="#"  data-update=""  >
                                                                     <img src="{{asset($products->banner_path)}}" alt="ri"/>
                                                                 </a>
                                                         
@@ -50,7 +50,7 @@
                                                     @else 
                                                     <li>
                                                             
-                                                        <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('assets/images/logo.png')}}" data-zoom-image="{{asset('assets/images/logo.png')}}" >
+                                                        <a href="#"  data-update=""   >
                                                             <img src="{{asset('assets/images/logo.png')}}" alt="ri"/>
                                                         </a>
                                                 
@@ -60,7 +60,7 @@
                                                     @if(isset($products->image1))
                                                         <li >
                             
-                                                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset($products->image_path1)}}" data-zoom-image="{{asset($products->image_path1)}}" >
+                                                            <a href="#"  data-update=""  >
                                                                 <img src="{{asset($products->image_path1)}}" alt=""/>
                                                             </a>
 
@@ -68,7 +68,7 @@
                                                      @else 
                                                         <li>
                                                                 
-                                                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('assets/images/logo.png')}}" data-zoom-image="{{asset('assets/images/logo.png')}}" >
+                                                            <a href="#"  data-update=""  >
                                                                 <img src="{{asset('assets/images/logo.png')}}" alt="ri"/>
                                                             </a>
                                                     
@@ -77,7 +77,7 @@
                                                     
                                                     @if(isset($products->image2))
                                                         <li >
-                                                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset($products->image_path2)}}" data-zoom-image="{{asset($products->image_path2)}}">
+                                                            <a href="#"  data-update="" >
                                                                 <img src="{{asset($products->image_path2)}}" alt=""/>
                                                             </a>
 
@@ -85,7 +85,7 @@
                                                     @else 
                                                         <li>
                                                                 
-                                                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{{asset('assets/images/logo.png')}}" data-zoom-image="{{asset('assets/images/logo.png')}}" >
+                                                            <a href="#"  data-update=""  >
                                                                 <img src="{{asset('assets/images/logo.png')}}" alt="ri"/>
                                                             </a>
                                                     
